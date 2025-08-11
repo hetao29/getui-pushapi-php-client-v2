@@ -19,7 +19,6 @@ class GTHttpManager
         }
         $curl = GTHttpManager::$curls[$url];
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curl, CURLOPT_BINARYTRANSFER, 1);
         curl_setopt($curl, CURLOPT_USERAGENT, 'GeTui RAS2 PHP/1.0');
         curl_setopt($curl, CURLOPT_FORBID_REUSE, 0);
         curl_setopt($curl, CURLOPT_FRESH_CONNECT, 0);
